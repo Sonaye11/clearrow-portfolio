@@ -1,5 +1,6 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+import { absoluteUrl } from '../config/site'
 import en from '../locales/en.json'
 import fr from '../locales/fr.json'
 import es from '../locales/es.json'
@@ -42,13 +43,16 @@ export function updateDocumentLanguage(lang) {
   document.title = i18n.t('meta.title')
 
   const description = i18n.t('meta.description')
-  const imageUrl = `${window.location.origin}/og-image.jpg`
+  const imageUrl = absoluteUrl('/og-image.jpg')
+  const pageUrl =
+    typeof window !== 'undefined' ? window.location.href : absoluteUrl(`/${lang}`)
 
   setMetaContent('name', 'description', description)
   setMetaContent('property', 'og:title', i18n.t('meta.title'))
   setMetaContent('property', 'og:description', description)
   setMetaContent('property', 'og:image', imageUrl)
-  setMetaContent('property', 'og:url', window.location.href)
+  setMetaContent('property', 'og:image:secure_url', imageUrl)
+  setMetaContent('property', 'og:url', pageUrl)
   setMetaContent('name', 'twitter:title', i18n.t('meta.title'))
   setMetaContent('name', 'twitter:description', description)
   setMetaContent('name', 'twitter:image', imageUrl)
