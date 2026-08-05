@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Clearrow",
+    "description": "Clearrow — Portfolio de designer graphique et développeur web."
+  },
+  "nav": {
+    "brand": "Clearrow",
+    "tagline": "Designer graphique & développeur web",
+    "about": "À propos",
+    "work": "Projets",
+    "competence": "Compétences",
+    "services": "Services",
+    "contact": "Me contacter",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "mainNav": "Navigation principale"
+  },
+  "hero": {
+    "headline": "Concevons quelque chose...",
+    "subheadline": "Ici pour tous vos projets, entreprises, rêves et passions",
+    "cta": "Me contacter",
+    "brandMark": "CLEARROW"
+  },
+  "about": {
+    "paragraphs": [
+      "Je suis Clearrow, designer graphique passionné par la création d'identités visuelles qui aident les entreprises à se démarquer et à laisser une impression durable.",
+      "J'accompagne entreprises, marques et entrepreneurs sur le logo, les affiches, l'identité visuelle complète et les sites web, en transformant leurs idées en visuels percutants et cohérents. Mon objectif est de créer des designs qui captent l'attention tout en renforçant la crédibilité et l'image de chaque projet.",
+      "Que vous recherchiez une direction artistique propre et professionnelle ou un concept plus audacieux — voire merveilleusement décalé — je suis prêt à donner vie à votre vision. J'aime explorer des idées créatives qui sortent de l'ordinaire, tout en veillant à ce que le résultat final reste pertinent, efficace et fidèle à vos objectifs."
+    ]
+  },
+  "work": {
+    "title": "PROJETS",
+    "viewImage": "Voir {{alt}}",
+    "categories": {
+      "logos": {
+        "title": "Logos",
+        "meta": "2026 - Branding"
+      },
+      "posters": {
+        "title": "Affiches",
+        "meta": "2026 - Design graphique"
+      },
+      "website": {
+        "title": "Proposition de refonte — site scolaire",
+        "meta": "2026 - Web design"
+      }
+    },
+    "items": {
+      "griolang": { "alt": "Logo Griolang" },
+      "auren": { "alt": "Identité Auren consulting" },
+      "flex": { "alt": "Logo Flex" },
+      "ananas": { "alt": "Affiche jus d'ananas" },
+      "pepsi": { "alt": "Affiche Pepsi" },
+      "atieke": { "alt": "Affiche Atieke" },
+      "laptop": { "alt": "Maquette ordinateur — site scolaire" },
+      "pages": { "alt": "Pages du site scolaire" },
+      "canva": { "alt": "Section hero du site scolaire" }
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "cards": {
+      "branding": {
+        "title": "Branding",
+        "description": ["Créer des identités remarquables.", "Raconter des histoires par le design."],
+        "alt": "Illustration livre branding violet"
+      },
+      "webDesign": {
+        "title": "Web Design",
+        "description": ["Des pages qui convertissent en actions.", "Des vitrines pour vos projets."],
+        "alt": "Illustration curseur et cœur web design orange"
+      },
+      "graphicDesign": {
+        "title": "Design graphique",
+        "description": ["Transformer des idées en visuels percutants.", "Pour l'impression, les réseaux sociaux, etc."],
+        "alt": "Illustration outils design graphique orange"
+      },
+      "webDevelopment": {
+        "title": "Développement web",
+        "description": ["Transformer les designs en sites fonctionnels.", "Passer du plan à l'action."],
+        "alt": "Illustration ordinateur portable violet"
+      }
+    }
+  },
+  "services": {
+    "title": "Services",
+    "footnote": "(Et bien plus sur demande...)",
+    "cards": {
+      "adsSocial": {
+        "title": ["Publicités / Réseaux sociaux", "Design visuel"],
+        "features": ["1 post, flyer ou bannière", "2 révisions", "Fichiers de design"]
+      },
+      "logoDesign": {
+        "title": ["Logo Design"],
+        "features": ["1 logo sur mesure", "2 révisions", "Fichiers de design"]
+      },
+      "websiteDesign": {
+        "title": ["Design de site web"],
+        "features": ["Un site une page", "Optimisé mobile", "4 sections + contact", "1 révision"]
+      }
+    }
+  },
+  "contact": {
+    "title": "DISCUTONS",
+    "labels": {
+      "email": "Email",
+      "discord": "Discord",
+      "instagram": "Instagram"
+    },
+    "copyright": "@ 2026 - Clearrow"
+  }
+}

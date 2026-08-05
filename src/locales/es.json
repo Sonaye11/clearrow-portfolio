@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Clearrow",
+    "description": "Clearrow — Portafolio de diseñador gráfico y desarrollador web."
+  },
+  "nav": {
+    "brand": "Clearrow",
+    "tagline": "Diseñador gráfico y desarrollador web",
+    "about": "Sobre mí",
+    "work": "Proyectos",
+    "competence": "Competencias",
+    "services": "Servicios",
+    "contact": "Contáctame",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "mainNav": "Navegación principal"
+  },
+  "hero": {
+    "headline": "Diseñemos algo...",
+    "subheadline": "Aquí para todos tus proyectos, negocios, sueños y pasiones",
+    "cta": "Contáctame",
+    "brandMark": "CLEARROW"
+  },
+  "about": {
+    "paragraphs": [
+      "Soy Clearrow, diseñador gráfico apasionado por crear identidades visuales que ayudan a las empresas a destacar y dejar una impresión duradera.",
+      "Trabajo con empresas, marcas y emprendedores en diseño de logos, pósters, branding completo y sitios web, convirtiendo sus ideas en visuales impactantes y coherentes. Mi objetivo es crear diseños que capten la atención mientras refuerzan la credibilidad y la imagen de cada proyecto.",
+      "Ya sea que busques una dirección artística limpia y profesional o un concepto más audaz — incluso maravillosamente original — estoy listo para dar vida a tu visión. Me encanta explorar ideas creativas que van más allá de lo ordinario, asegurándome de que el resultado final siga siendo relevante, efectivo y fiel a tus objetivos."
+    ]
+  },
+  "work": {
+    "title": "PROYECTOS",
+    "viewImage": "Ver {{alt}}",
+    "categories": {
+      "logos": {
+        "title": "Logos",
+        "meta": "2026 - Branding"
+      },
+      "posters": {
+        "title": "Pósters",
+        "meta": "2026 - Diseño gráfico"
+      },
+      "website": {
+        "title": "Propuesta de rediseño — sitio escolar",
+        "meta": "2026 - Diseño web"
+      }
+    },
+    "items": {
+      "griolang": { "alt": "Logo Griolang" },
+      "auren": { "alt": "Marca Auren consulting" },
+      "flex": { "alt": "Logo Flex" },
+      "ananas": { "alt": "Póster zumo de piña" },
+      "pepsi": { "alt": "Póster Pepsi" },
+      "atieke": { "alt": "Póster Atieke" },
+      "laptop": { "alt": "Mockup portátil — sitio escolar" },
+      "pages": { "alt": "Páginas del sitio escolar" },
+      "canva": { "alt": "Sección hero del sitio escolar" }
+    }
+  },
+  "skills": {
+    "title": "Competencias",
+    "cards": {
+      "branding": {
+        "title": "Branding",
+        "description": ["Crear identidades notables.", "Contar historias a través del diseño."],
+        "alt": "Ilustración libro branding morado"
+      },
+      "webDesign": {
+        "title": "Diseño web",
+        "description": ["Páginas que convierten en acciones.", "Ventanas para tus proyectos."],
+        "alt": "Ilustración cursor y corazón diseño web naranja"
+      },
+      "graphicDesign": {
+        "title": "Diseño gráfico",
+        "description": ["Convertir ideas en visuales impactantes.", "Para impresión, redes sociales, etc."],
+        "alt": "Ilustración herramientas diseño gráfico naranja"
+      },
+      "webDevelopment": {
+        "title": "Desarrollo web",
+        "description": ["Convertir diseños en sitios funcionales.", "Del plan a la acción."],
+        "alt": "Ilustración portátil morado"
+      }
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "footnote": "(Y mucho más bajo pedido...)",
+    "cards": {
+      "adsSocial": {
+        "title": ["Anuncios / Redes sociales", "Diseño visual"],
+        "features": ["1 post, flyer o banner", "2 revisiones", "Archivos de diseño"]
+      },
+      "logoDesign": {
+        "title": ["Diseño de logo"],
+        "features": ["1 logo personalizado", "2 revisiones", "Archivos de diseño"]
+      },
+      "websiteDesign": {
+        "title": ["Diseño de sitio web"],
+        "features": ["Un sitio de una página", "Optimizado para móvil", "4 secciones + contacto", "1 revisión"]
+      }
+    }
+  },
+  "contact": {
+    "title": "HABLEMOS",
+    "labels": {
+      "email": "Email",
+      "discord": "Discord",
+      "instagram": "Instagram"
+    },
+    "copyright": "@ 2026 - Clearrow"
+  }
+}

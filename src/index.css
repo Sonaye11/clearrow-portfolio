@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'AKONY';
+  src:
+    url('./assets/fonts/akony.otf') format('opentype'),
+    url('./assets/fonts/akony.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-accent: #f36c00;
+  --color-muted: #a4a4a4;
+  --color-secondary: #7b5cff;
+
+  --font-display: 'AKONY', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --spacing-section-x: 4rem;
+  --width-page: 90rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  section[id] {
+    scroll-margin-top: 2rem;
+  }
+
+  body {
+    @apply m-0 bg-white font-body text-black antialiased;
+  }
+
+  #root {
+    @apply min-h-svh;
+  }
+}
+
+@layer utilities {
+  @keyframes carousel-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes carousel-scroll-right {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .carousel-track-left {
+    animation: carousel-scroll-left var(--carousel-duration, 40s) linear infinite;
+  }
+
+  .carousel-track-right {
+    animation: carousel-scroll-right var(--carousel-duration, 40s) linear infinite;
+  }
+
+  .carousel-paused {
+    animation-play-state: paused;
+  }
+
+  html[lang='fr'] .hero-headline {
+    font-size: clamp(1rem, 3.6vw, 5.5rem);
+  }
+
+  html[lang='es'] .hero-headline {
+    font-size: clamp(1rem, 3.8vw, 5.5rem);
+  }
+
+  /* FR/ES: navbar tagline smaller to avoid overlap */
+  html[lang='fr'] .nav-tagline,
+  html[lang='es'] .nav-tagline {
+    font-size: 0.8125rem;
+  }
+
+  /* FR/ES: tablet navbar font size */
+  @media (min-width: 768px) and (max-width: 1279px) {
+    html[lang='fr'] .desktop-nav,
+    html[lang='es'] .desktop-nav {
+      font-size: 1rem;
+    }
+  }
+
+  /* FR/ES: mobile work + contact titles smaller */
+  @media (max-width: 767px) {
+    html[lang='fr'] .work-title,
+    html[lang='es'] .work-title {
+      font-size: clamp(1.75rem, 6vw, 2.25rem);
+    }
+
+    html[lang='fr'] .contact-title,
+    html[lang='es'] .contact-title {
+      font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    html[lang='es'] .skills-title {
+      font-size: clamp(1.125rem, 3.5vw, 1.5rem);
+    }
+  }
+
+  /* FR/ES: contact title larger on tablet/desktop */
+  @media (min-width: 768px) {
+    html[lang='fr'] .contact-title,
+    html[lang='es'] .contact-title {
+      font-size: clamp(3rem, 7vw, 5rem);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    html[lang='fr'] .contact-title,
+    html[lang='es'] .contact-title {
+      font-size: 6rem;
+    }
+
+    html[lang='fr'] .nav-tagline,
+    html[lang='es'] .nav-tagline {
+      font-size: 0.875rem;
+    }
+  }
+
+  /* FR/ES: ads/social service card title smaller */
+  html[lang='fr'] [data-service='ads-social'] .service-card-title,
+  html[lang='es'] [data-service='ads-social'] .service-card-title {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+  }
+
+  /* Small mobile (320px) safety net — all languages */
+  @media (max-width: 374px) {
+    .work-title,
+    html[lang='fr'] .work-title,
+    html[lang='es'] .work-title {
+      font-size: clamp(1.5rem, 7vw, 2rem);
+    }
+
+    .skills-title,
+    html[lang='es'] .skills-title {
+      font-size: clamp(1.125rem, 4vw, 1.375rem);
+    }
+
+    .services-title {
+      font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+  }
+}

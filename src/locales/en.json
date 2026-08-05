@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Clearrow",
+    "description": "Clearrow — Digital designer and web developer portfolio."
+  },
+  "nav": {
+    "brand": "Clearrow",
+    "tagline": "Digital designer & Web developer",
+    "about": "About",
+    "work": "Work",
+    "competence": "Competence",
+    "services": "Services",
+    "contact": "Contact me",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation"
+  },
+  "hero": {
+    "headline": "Let's design something...",
+    "subheadline": "Here for any of your projects, businesses, dreams and passions",
+    "cta": "Get in touch",
+    "brandMark": "CLEARROW"
+  },
+  "about": {
+    "paragraphs": [
+      "I'm Clearrow, a graphic designer passionate about creating visual identities that help businesses stand out and leave a lasting impression.",
+      "I work with businesses, brands, and entrepreneurs on logo design, posters, complete branding, and websites, turning their ideas into impactful, cohesive visuals. My goal is to create designs that grab attention while strengthening the credibility and image of every project.",
+      "Whether you're looking for a clean, professional art direction or a bolder, more original — even wonderfully offbeat — concept, I'm ready to bring your vision to life. I love exploring creative ideas that go beyond the ordinary, while making sure the final result stays relevant, effective, and true to your goals."
+    ]
+  },
+  "work": {
+    "title": "WORKS",
+    "viewImage": "View {{alt}}",
+    "categories": {
+      "logos": {
+        "title": "Logos",
+        "meta": "2026 - Branding"
+      },
+      "posters": {
+        "title": "Posters",
+        "meta": "2026 - Graphic Design"
+      },
+      "website": {
+        "title": "School Website Redesign Proposition",
+        "meta": "2026 - Web Design"
+      }
+    },
+    "items": {
+      "griolang": { "alt": "Griolang logo" },
+      "auren": { "alt": "Auren consulting brand" },
+      "flex": { "alt": "Flex logo" },
+      "ananas": { "alt": "Ananas juice poster" },
+      "pepsi": { "alt": "Pepsi poster" },
+      "atieke": { "alt": "Atieke poster" },
+      "laptop": { "alt": "School website laptop mockup" },
+      "pages": { "alt": "School website pages" },
+      "canva": { "alt": "School website hero section" }
+    }
+  },
+  "skills": {
+    "title": "Competences",
+    "cards": {
+      "branding": {
+        "title": "Branding",
+        "description": ["Create noticiable identities.", "Tell stories through designs."],
+        "alt": "Purple branding book illustration"
+      },
+      "webDesign": {
+        "title": "Web Design",
+        "description": ["Make pages that convert into actions.", "Windows for your projects."],
+        "alt": "Orange web design cursor and heart illustration"
+      },
+      "graphicDesign": {
+        "title": "Graphic Design",
+        "description": ["Develop ideas into impacting visuals.", "For print, social media, etc."],
+        "alt": "Orange graphic design tools illustration"
+      },
+      "webDevelopment": {
+        "title": "Web Development",
+        "description": ["Turn designs into functioning website.", "Put the plan into actions."],
+        "alt": "Purple laptop illustration"
+      }
+    }
+  },
+  "services": {
+    "title": "Services",
+    "footnote": "(And much more on command...)",
+    "cards": {
+      "adsSocial": {
+        "title": ["Ads/Social Media", "Visual Design"],
+        "features": ["1 Post, Flyer or Banner", "2 Revisions", "Design files"]
+      },
+      "logoDesign": {
+        "title": ["Logo Design"],
+        "features": ["1 Custom logo", "2 Revisions", "Design files"]
+      },
+      "websiteDesign": {
+        "title": ["Website Design"],
+        "features": ["A one-page website", "Mobile optimised", "4 Sections + contact", "1 Revision"]
+      }
+    }
+  },
+  "contact": {
+    "title": "LET'S TALK",
+    "labels": {
+      "email": "Email",
+      "discord": "Discord",
+      "instagram": "Instagram"
+    },
+    "copyright": "@ 2026 - Clearrow"
+  }
+}
