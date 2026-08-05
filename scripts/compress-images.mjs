@@ -42,7 +42,7 @@ async function compressDirectory(relativeDir) {
 async function createOgImage(profilePath) {
   const outputJpg = path.join(root, 'public/og-image.jpg')
   const outputPng = path.join(root, 'public/og-image.png')
-  const helmet = await sharp(profilePath).resize(630, 630, { fit: 'contain' }).toBuffer()
+  const helmet = await sharp(profilePath).resize(900, 630, { fit: 'inside' }).toBuffer()
 
   const canvas = sharp({
     create: {
