@@ -19,6 +19,8 @@ export const workCategories = [
       { src: '/work/posters/ananas.webp', itemId: 'ananas' },
       { src: '/work/posters/pepsi.webp', itemId: 'pepsi' },
       { src: '/work/posters/atieke.webp', itemId: 'atieke' },
+      { src: '/work/posters/lime-kiss.webp', itemId: 'limeKiss' },
+      { src: '/work/posters/sarah-menu.webp', itemId: 'sarahMenu' },
     ],
   },
   {

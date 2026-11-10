@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Backups created by scripts/compress-images.mjs
+originals/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

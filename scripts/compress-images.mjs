@@ -1,9 +1,20 @@
+/**
+ * Converts every PNG in the folders below to WebP.
+ * The original PNGs are moved to /originals (outside /public) instead of deleted.
+ *
+ * Usage (from the project root):
+ *   node scripts/compress-images.mjs                      -> compress new PNGs only
+ *   node scripts/compress-images.mjs path/to/profile.png  -> also rebuild the OG image
+ */
 import fs from 'node:fs/promises'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
 
-const root = path.resolve(import.meta.dirname, '..')
+// Project root = one level above this script's folder (works on any Node version)
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const webpQuality = 82
+const originalsDir = 'originals'
 
 const imageDirs = [
   'public/work/logos',
@@ -13,29 +24,42 @@ const imageDirs = [
   'src/assets/hero',
 ]
 
-async function compressPngToWebp(filePath) {
+async function compressPngToWebp(filePath, relativeDir) {
   const webpPath = filePath.replace(/\.png$/i, '.webp')
   const before = (await fs.stat(filePath)).size
 
   await sharp(filePath).webp({ quality: webpQuality }).toFile(webpPath)
-
   const after = (await fs.stat(webpPath)).size
-  await fs.unlink(filePath)
+
+  // Keep the original PNG (in /originals) instead of deleting it
+  const backupDir = path.join(root, originalsDir, relativeDir)
+  await fs.mkdir(backupDir, { recursive: true })
+  await fs.rename(filePath, path.join(backupDir, path.basename(filePath)))
 
   return { before, after, webpPath }
 }
 
 async function compressDirectory(relativeDir) {
   const dirPath = path.join(root, relativeDir)
-  const entries = await fs.readdir(dirPath)
-  const results = []
 
+  let entries
+  try {
+    entries = await fs.readdir(dirPath)
+  } catch {
+    console.warn(`Skipping ${relativeDir} (folder not found)`)
+    return []
+  }
+
+  const results = []
   for (const entry of entries) {
     if (!entry.toLowerCase().endsWith('.png')) continue
     const filePath = path.join(dirPath, entry)
-    results.push(await compressPngToWebp(filePath))
+    try {
+      results.push(await compressPngToWebp(filePath, relativeDir))
+    } catch (err) {
+      console.error(`Failed on ${path.join(relativeDir, entry)}: ${err.message}`)
+    }
   }
-
   return results
 }
 
@@ -61,9 +85,9 @@ async function createOgImage(profilePath) {
   return { outputJpg, outputPng }
 }
 
-const profilePath =
-  process.argv[2] ??
-  '/Users/monmon/.cursor/projects/Users-monmon-Documents-Website-Portfolio/assets/Profile-042aee7e-0c46-4b37-b003-df4e06b487fd.png'
+// ---- Run ----
+
+const profilePath = process.argv[2] // optional
 
 let totalBefore = 0
 let totalAfter = 0
@@ -79,9 +103,23 @@ for (const dir of imageDirs) {
   }
 }
 
-const og = await createOgImage(profilePath)
-const ogJpgSize = (await fs.stat(og.outputJpg)).size
-console.log(`\nog-image.jpg: ${Math.round(ogJpgSize / 1024)}KB`)
-console.log(
-  `\nTotal: ${Math.round(totalBefore / 1024)}KB → ${Math.round(totalAfter / 1024)}KB (${Math.round((1 - totalAfter / totalBefore) * 100)}% smaller)`,
-)
+if (totalBefore > 0) {
+  console.log(
+    `\nTotal: ${Math.round(totalBefore / 1024)}KB → ${Math.round(totalAfter / 1024)}KB (${Math.round((1 - totalAfter / totalBefore) * 100)}% smaller)`,
+  )
+  console.log(`Original PNGs moved to /${originalsDir}`)
+} else {
+  console.log('No PNGs to compress.')
+}
+
+if (profilePath) {
+  try {
+    await fs.access(profilePath)
+    const og = await createOgImage(profilePath)
+    const ogJpgSize = (await fs.stat(og.outputJpg)).size
+    console.log(`\nog-image.jpg: ${Math.round(ogJpgSize / 1024)}KB`)
+  } catch (err) {
+    console.error(`\nCould not build the OG image from "${profilePath}": ${err.message}`)
+    process.exitCode = 1
+  }
+}

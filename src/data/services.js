@@ -3,21 +3,21 @@
  */
 export const services = [
   {
-    id: 'ads-social',
-    cardKey: 'adsSocial',
-    price: '$25 / 15000 CFA',
+    id: 'essential-launch',
+    cardKey: 'essentialLaunch',
+    price: '40 000 CFA',
     featured: false,
   },
   {
-    id: 'logo-design',
-    cardKey: 'logoDesign',
-    price: '$60 / 35000 CFA',
+    id: 'brand-launch',
+    cardKey: 'brandLaunch',
+    price: '80 000 CFA',
     featured: true,
   },
   {
-    id: 'website-design',
-    cardKey: 'websiteDesign',
-    price: '$175 / 100000 CFA',
+    id: 'full-identity',
+    cardKey: 'fullIdentity',
+    price: '150 000 CFA',
     featured: false,
   },
 ]

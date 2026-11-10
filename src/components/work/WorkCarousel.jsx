@@ -66,17 +66,19 @@ export default function WorkCarousel({
   if (localizedItems.length === 0) return null
 
   return (
-    <div className="w-full">
+    <div className="work-carousel w-full">
       <div className="overflow-hidden">
         <div
-          className={`flex w-max gap-5 ${scrollRight ? 'carousel-track-right' : 'carousel-track-left'} ${paused ? 'carousel-paused' : ''}`}
+          className={`flex w-max ${scrollRight ? 'carousel-track-right' : 'carousel-track-left'} ${paused ? 'carousel-paused' : ''}`}
           style={{ '--carousel-duration': duration }}
         >
+          {/* Margin instead of flex gap: it keeps the track exactly twice the width
+              of one slide set, so the -50% animation loops without a jump. */}
           {trackItems.map((item, index) => (
             <button
               key={`${item.src}-${index}`}
               type="button"
-              className="block shrink-0 cursor-zoom-in border-0 bg-transparent p-0"
+              className="mr-5 block shrink-0 cursor-zoom-in border-0 bg-transparent p-0"
               onClick={() => openLightbox(item)}
               aria-label={t('work.viewImage', { alt: item.alt })}
             >

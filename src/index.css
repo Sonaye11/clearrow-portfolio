@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 @import 'tailwindcss';
 
 @font-face {
@@ -74,6 +74,14 @@
     animation-play-state: paused;
   }
 
+  /* Pause while the carousel is hovered (devices that actually support hover). */
+  @media (hover: hover) {
+    .work-carousel:hover .carousel-track-left,
+    .work-carousel:hover .carousel-track-right {
+      animation-play-state: paused;
+    }
+  }
+
   html[lang='fr'] .hero-headline {
     font-size: clamp(1rem, 3.6vw, 5.5rem);
   }
@@ -131,12 +139,6 @@
     html[lang='es'] .nav-tagline {
       font-size: 0.875rem;
     }
-  }
-
-  /* FR/ES: ads/social service card title smaller */
-  html[lang='fr'] [data-service='ads-social'] .service-card-title,
-  html[lang='es'] [data-service='ads-social'] .service-card-title {
-    font-size: clamp(1.125rem, 2vw, 1.5rem);
   }
 
   /* Small mobile (320px) safety net — all languages */

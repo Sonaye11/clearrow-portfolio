@@ -52,6 +52,8 @@
       "ananas": { "alt": "Affiche jus d'ananas" },
       "pepsi": { "alt": "Affiche Pepsi" },
       "atieke": { "alt": "Affiche Atieke" },
+      "limeKiss": { "alt": "Affiche boisson Lime Kiss" },
+      "sarahMenu": { "alt": "Affiche menu Sarah" },
       "laptop": { "alt": "Maquette ordinateur — site scolaire" },
       "pages": { "alt": "Pages du site scolaire" },
       "canva": { "alt": "Section hero du site scolaire" }
@@ -86,17 +88,35 @@
     "title": "Services",
     "footnote": "(Et bien plus sur demande...)",
     "cards": {
-      "adsSocial": {
-        "title": ["Publicités / Réseaux sociaux", "Design visuel"],
-        "features": ["1 post, flyer ou bannière", "2 révisions", "Fichiers de design"]
+      "essentialLaunch": {
+        "title": ["Lancement", "Essentiel"],
+        "description": "« Idéal pour les nouveaux commerces et entrepreneurs qui ont besoin d'une image professionnelle rapide pour attirer leurs premiers clients. »",
+        "features": [
+          "1 logo sur mesure (2 concepts, 2 révisions, fichiers finaux)",
+          "Kit de démarrage pour les réseaux sociaux (photo de profil + bannière)",
+          "2 modèles de publications réutilisables (pour vos annonces et promotions)"
+        ]
       },
-      "logoDesign": {
-        "title": ["Logo Design"],
-        "features": ["1 logo sur mesure", "2 révisions", "Fichiers de design"]
+      "brandLaunch": {
+        "title": ["Lancement", "de Marque"],
+        "description": "« Parfait pour les commerces prêts à paraître établis et à inspirer confiance. Une solution clé en main pour dominer les réseaux sociaux et centraliser vos liens. »",
+        "features": [
+          "Tout ce qui est inclus dans l'offre « Lancement Essentiel »",
+          "Logo avancé (3 concepts, 3 révisions, palette de couleurs et polices incluses)",
+          "Configuration complète du profil sur les réseaux sociaux (profil, couverture, icônes « À la une »)",
+          "5 modèles de publications personnalisables dans Canva",
+          "1 mini-site web (landing page) pour mettre tous vos liens (WhatsApp, Instagram, menu) au même endroit"
+        ]
       },
-      "websiteDesign": {
-        "title": ["Design de site web"],
-        "features": ["Un site une page", "Optimisé mobile", "4 sections + contact", "1 révision"]
+      "fullIdentity": {
+        "title": ["Identité", "Complète"],
+        "description": "« Pour les entreprises sérieuses qui veulent une image premium et cohérente sur tous les supports (papier et digital) afin de dominer leur secteur. »",
+        "features": [
+          "Tout ce qui est inclus dans l'offre « Lancement de Marque »",
+          "Charte graphique complète (document PDF officiel : comment utiliser votre logo, codes couleurs exacts, typographies)",
+          "Création de cartes de visite (fichiers prêts pour l'impression)",
+          "1 site vitrine d'une page (design 100 % sur mesure, adapté aux mobiles, avec formulaire de contact fonctionnel)"
+        ]
       }
     }
   },
@@ -107,6 +127,6 @@
       "discord": "Discord",
       "instagram": "Instagram"
     },
-    "copyright": "@ 2026 - Clearrow"
+    "copyright": "© 2026 - Clearrow"
   }
 }

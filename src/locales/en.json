@@ -52,6 +52,8 @@
       "ananas": { "alt": "Ananas juice poster" },
       "pepsi": { "alt": "Pepsi poster" },
       "atieke": { "alt": "Atieke poster" },
+      "limeKiss": { "alt": "Lime Kiss beverage poster" },
+      "sarahMenu": { "alt": "Sarah's Menu food poster" },
       "laptop": { "alt": "School website laptop mockup" },
       "pages": { "alt": "School website pages" },
       "canva": { "alt": "School website hero section" }
@@ -62,7 +64,7 @@
     "cards": {
       "branding": {
         "title": "Branding",
-        "description": ["Create noticiable identities.", "Tell stories through designs."],
+        "description": ["Create noticeable identities.", "Tell stories through designs."],
         "alt": "Purple branding book illustration"
       },
       "webDesign": {
@@ -72,12 +74,12 @@
       },
       "graphicDesign": {
         "title": "Graphic Design",
-        "description": ["Develop ideas into impacting visuals.", "For print, social media, etc."],
+        "description": ["Develop ideas into impactful visuals.", "For print, social media, etc."],
         "alt": "Orange graphic design tools illustration"
       },
       "webDevelopment": {
         "title": "Web Development",
-        "description": ["Turn designs into functioning website.", "Put the plan into actions."],
+        "description": ["Turn designs into functioning websites.", "Put the plan into actions."],
         "alt": "Purple laptop illustration"
       }
     }
@@ -86,17 +88,35 @@
     "title": "Services",
     "footnote": "(And much more on command...)",
     "cards": {
-      "adsSocial": {
-        "title": ["Ads/Social Media", "Visual Design"],
-        "features": ["1 Post, Flyer or Banner", "2 Revisions", "Design files"]
+      "essentialLaunch": {
+        "title": ["Essential", "Launch"],
+        "description": "“Ideal for new businesses and entrepreneurs who need a professional image quickly to attract their first clients.”",
+        "features": [
+          "1 custom logo (2 concepts, 2 revisions, final files)",
+          "Social media starter kit (profile picture + banner)",
+          "2 reusable post templates (for your announcements and promotions)"
+        ]
       },
-      "logoDesign": {
-        "title": ["Logo Design"],
-        "features": ["1 Custom logo", "2 Revisions", "Design files"]
+      "brandLaunch": {
+        "title": ["Brand", "Launch"],
+        "description": "“Perfect for businesses ready to look established and inspire confidence. A turnkey solution to dominate social media and centralize your links.”",
+        "features": [
+          "Everything in the “Essential Launch” offer",
+          "Advanced logo (3 concepts, 3 revisions, color palette and fonts included)",
+          "Complete social media profile setup (profile, cover, highlight icons)",
+          "5 customizable post templates in Canva",
+          "1 mini website (landing page) to put all your links (WhatsApp, Instagram, menu) in one place"
+        ]
       },
-      "websiteDesign": {
-        "title": ["Website Design"],
-        "features": ["A one-page website", "Mobile optimised", "4 Sections + contact", "1 Revision"]
+      "fullIdentity": {
+        "title": ["Complete", "Identity"],
+        "description": "“For serious businesses that want a premium, consistent image across every medium (print and digital) to dominate their sector.”",
+        "features": [
+          "Everything in the “Brand Launch” offer",
+          "Complete brand guidelines (official PDF documenting logo usage, exact color codes, and typography)",
+          "Business card design (print-ready files)",
+          "1 one-page showcase website (100% custom design, mobile-friendly, with a working contact form)"
+        ]
       }
     }
   },
@@ -107,6 +127,6 @@
       "discord": "Discord",
       "instagram": "Instagram"
     },
-    "copyright": "@ 2026 - Clearrow"
+    "copyright": "© 2026 - Clearrow"
   }
 }

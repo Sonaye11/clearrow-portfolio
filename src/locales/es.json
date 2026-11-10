@@ -52,6 +52,8 @@
       "ananas": { "alt": "Póster zumo de piña" },
       "pepsi": { "alt": "Póster Pepsi" },
       "atieke": { "alt": "Póster Atieke" },
+      "limeKiss": { "alt": "Póster bebida Lime Kiss" },
+      "sarahMenu": { "alt": "Póster menú Sarah" },
       "laptop": { "alt": "Mockup portátil — sitio escolar" },
       "pages": { "alt": "Páginas del sitio escolar" },
       "canva": { "alt": "Sección hero del sitio escolar" }
@@ -86,17 +88,35 @@
     "title": "Servicios",
     "footnote": "(Y mucho más bajo pedido...)",
     "cards": {
-      "adsSocial": {
-        "title": ["Anuncios / Redes sociales", "Diseño visual"],
-        "features": ["1 post, flyer o banner", "2 revisiones", "Archivos de diseño"]
+      "essentialLaunch": {
+        "title": ["Lanzamiento", "Esencial"],
+        "description": "«Ideal para nuevos negocios y emprendedores que necesitan una imagen profesional rápida para atraer a sus primeros clientes.»",
+        "features": [
+          "1 logo personalizado (2 conceptos, 2 revisiones, archivos finales)",
+          "Kit de inicio para redes sociales (foto de perfil + banner)",
+          "2 plantillas de publicaciones reutilizables (para tus anuncios y promociones)"
+        ]
       },
-      "logoDesign": {
-        "title": ["Diseño de logo"],
-        "features": ["1 logo personalizado", "2 revisiones", "Archivos de diseño"]
+      "brandLaunch": {
+        "title": ["Lanzamiento", "de Marca"],
+        "description": "«Perfecto para negocios listos para verse establecidos e inspirar confianza. Una solución llave en mano para dominar las redes sociales y centralizar tus enlaces.»",
+        "features": [
+          "Todo lo que incluye la oferta «Lanzamiento Esencial»",
+          "Logo avanzado (3 conceptos, 3 revisiones, paleta de colores y tipografías incluidas)",
+          "Configuración completa del perfil en redes sociales (perfil, portada, iconos destacados)",
+          "5 plantillas de publicaciones personalizables en Canva",
+          "1 mini sitio web (landing page) para reunir todos tus enlaces (WhatsApp, Instagram, menú) en un solo lugar"
+        ]
       },
-      "websiteDesign": {
-        "title": ["Diseño de sitio web"],
-        "features": ["Un sitio de una página", "Optimizado para móvil", "4 secciones + contacto", "1 revisión"]
+      "fullIdentity": {
+        "title": ["Identidad", "Completa"],
+        "description": "«Para empresas serias que quieren una imagen premium y coherente en todos los soportes (impreso y digital) para dominar su sector.»",
+        "features": [
+          "Todo lo que incluye la oferta «Lanzamiento de Marca»",
+          "Manual de marca completo (documento PDF oficial: cómo usar tu logo, códigos de color exactos, tipografías)",
+          "Diseño de tarjetas de visita (archivos listos para imprimir)",
+          "1 sitio vitrina de una página (diseño 100 % personalizado, adaptado a móviles, con formulario de contacto funcional)"
+        ]
       }
     }
   },
@@ -107,6 +127,6 @@
       "discord": "Discord",
       "instagram": "Instagram"
     },
-    "copyright": "@ 2026 - Clearrow"
+    "copyright": "© 2026 - Clearrow"
   }
 }
