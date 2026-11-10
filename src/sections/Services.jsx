@@ -15,7 +15,7 @@ export default function Services() {
         </h2>
 
         <div className="mt-12 grid gap-6 md:mt-16 lg:grid-cols-3">
-          {services.map(({ id, cardKey, price, featured }) => {
+          {services.map(({ id, cardKey, price, priceUsd, featured }) => {
             const title = t(`services.cards.${cardKey}.title`, {
               returnObjects: true,
             })
@@ -64,7 +64,17 @@ export default function Services() {
                   </h3>
 
                   <p className="mt-3 text-center text-[clamp(2rem,3.4vw,3.25rem)] leading-none font-bold tracking-tight whitespace-nowrap md:text-[clamp(2.5rem,4.5vw,3.75rem)] lg:text-[clamp(2rem,3.4vw,3.25rem)]">
-                    {price}
+                    <span
+                      tabIndex={0}
+                      className="group relative inline-grid cursor-help overflow-hidden align-baseline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+                    >
+                      <span className="col-start-1 row-start-1 transition-all duration-300 ease-out group-hover:-translate-y-full group-hover:opacity-0 group-focus-visible:-translate-y-full group-focus-visible:opacity-0">
+                        {price}
+                      </span>
+                      <span className="col-start-1 row-start-1 translate-y-full text-accent opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:opacity-100">
+                        {priceUsd}
+                      </span>
+                    </span>
                   </p>
 
                   <p

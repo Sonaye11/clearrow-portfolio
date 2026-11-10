@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
+const SECONDS_PER_SLIDE = 9
+const MIN_DURATION_SECONDS = 24
+
 export default function WorkCarousel({
   categoryId,
   items,
@@ -20,7 +23,8 @@ export default function WorkCarousel({
   )
 
   const duration = useMemo(
-    () => `${Math.max(localizedItems.length * 12, 24)}s`,
+    () =>
+      `${Math.max(localizedItems.length * SECONDS_PER_SLIDE, MIN_DURATION_SECONDS)}s`,
     [localizedItems.length],
   )
 
