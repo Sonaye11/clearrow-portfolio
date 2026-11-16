@@ -17,7 +17,7 @@ export const contactLinks = [
   {
     id: 'instagram',
     labelKey: 'instagram',
-    value: '@clearrow.editing',
+    value: '@clearrowediting',
     href: 'https://instagram.com/clearrowediting',
   },
   {
