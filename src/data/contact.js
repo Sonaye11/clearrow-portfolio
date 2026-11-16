@@ -18,7 +18,13 @@ export const contactLinks = [
     id: 'instagram',
     labelKey: 'instagram',
     value: '@clearrow.editing',
-    href: 'https://instagram.com/clearrow.editing',
+    href: 'https://instagram.com/clearrowediting',
+  },
+  {
+    id: 'whatsapp',
+    labelKey: 'whatsapp',
+    value: '+2250798940938',
+    href: 'https://wa.me/2250798940938',
   },
 ]
 
